@@ -10,36 +10,8 @@ This project demonstrates a containerized web application setup using both Flask
 - Docker
 - Docker Compose
 - Git
+- jenkins
 
-## Project Structure
-
-```
-project_root/
-├── docker-compose.yml
-├── flask_app/
-│   ├── Dockerfile
-│   ├── app.py
-│   ├── requirements.txt
-│   └── templates/
-│       ├── form.html
-│       ├── greeting.html
-│       └── home.html
-└── django_app/
-    ├── Dockerfile
-    ├── manage.py
-    ├── requirements.txt
-    ├── project/
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
-    └── items/
-        ├── models.py
-        ├── views.py
-        ├── urls.py
-        └── templates/
-            └── items/
-                └── home.html
-```
 
 ## Quick Start
 
@@ -58,7 +30,11 @@ docker-compose up --build
 - Flask app: http://localhost:5000
 - Django app: http://localhost:8000
 - Django admin: http://localhost:8000/admin
-
+  
+ docker and github:-
+- container 1:-https://hub.docker.com/r/aman257/flask-app/tags
+- container 2:-https://hub.docker.com/r/aman257/django-app/tags
+ 
 4. For Django admin access:
 ```bash
 docker-compose run django_app python manage.py createsuperuser
